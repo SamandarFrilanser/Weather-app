@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/bg1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.wrap-app{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.3),rgba(0,0,0,.6));
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+header input{
+    width: 100%;
+    max-width: 280px;
+    background-color: rgba(255,255,255,.4);
+    color: #333;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 16px 5px 16px 5px;
+    transition: .3s ease-out;
+    outline: none;
+    border-bottom: 3px solid #def000;
+}
+header input:focus{
+    background-color: rgba(255,255,255,.9);
+    border-radius: 5px 16px 5px 16px;
+}
+menu{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px 25px 50px;
+}
+.location .city{
+    color:#fff;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.location .data{
+    color: #fff;
+    font-size: 16px;
+}
+.Temperature .temp{
+    color: #fff;
+    font-weight: 900;
+    font-size: 110px;
+    text-shadow: 2px 5px  rgba(0,0,0,.6);
+    margin: 30px 0;
+}
+.Temperature .temp span{
+    font-weight: 800;
+    font-size: 90px;
+}
+.footer .fog{
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 15px; 
+    text-shadow: 0 3px rgba(0,0,0,.6);
+}
+.footer .current{
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0 4px rgba(0,0,0,.6);
+    font-weight: 600;
+}
+@media (max-width :900px){
+    .wrap-app{
+        grid-template-columns: 100%;
+    }
+    menu{
+        margin-top: 50px;
+    }
+}
